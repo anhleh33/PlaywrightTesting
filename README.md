@@ -1,7 +1,10 @@
-# Javascript
+# ⚡Javascript
 ## Set up enviroment
 - Install Nodejs
-- User Nodejs in command to run (e.g., node + name file)
+- Use Nodejs in command to run
+```bash
+node + name file
+```
 - [OPTIONAL] Using Quokka by search bar (">Quokka.js: New File")
 
 ## Jasmine for NodeJS
@@ -39,3 +42,27 @@ your-project/
 └── src/                      ← (Optional) Your app code
     └── example.js
 ```
+
+# 📝 Typescript
+## Set up enviroment
+- Install Typescript
+```bash
+npm install -D typescript
+```
+
+- Check version (make sure that Typescript was already installed)
+```bash
+npx tsc --version
+```
+
+- Use npx to compile ts file → js file
+```bash
+npx tsc (filename).ts
+```
+If you have a tsconfig.json, you simply run:
+```bash
+npx tsc
+```
+- Then use node to run the file like javascript
+
+# 🎭 Playwright

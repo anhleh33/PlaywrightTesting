@@ -13,5 +13,3 @@ let add = (a, b) => {
 console.log(typeof add(1, 2))
 
 console.log(typeof add("anh", 2))
-
-console.log("test github graph")
