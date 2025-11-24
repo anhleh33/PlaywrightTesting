@@ -8,4 +8,4 @@ evenDoubled = (nums) => {
     return newNums
 }
 
-console.log(evenDoubled([1, 2, 3, 4, 80]))
+module.exports = { evenDoubled };

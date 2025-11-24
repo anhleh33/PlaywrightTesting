@@ -26,4 +26,4 @@ function calc(a, b, op) {
     }
 }
 
-console.log(calc(9, 0, '*'))
+module.exports = { calc };
