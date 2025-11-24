@@ -64,5 +64,8 @@ If you have a tsconfig.json, you simply run:
 npx tsc
 ```
 - Then use node to run the file like javascript
+```bash
+node (filename).js
+```
 
 # 🎭 Playwright
