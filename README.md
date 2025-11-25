@@ -69,3 +69,14 @@ node (filename).js
 ```
 
 # 🎭 Playwright
+- In Extension of VS code, find Playwright and then install it
+![alt text](image.png)
+
+- In search bar, use command  and wait until it is setted up successfully (check in Terminal)
+```bash
+>Test: Install Playwright
+```
+![alt text](image-1.png)
+
+- Push code to GitHub and check result of example to make sure that Playwright can be used immediately
+![alt text](image-2.png)
