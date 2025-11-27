@@ -6,9 +6,9 @@ test.describe("Swag Lab", () => {
         await expect(page).toHaveTitle("Swag Labs")
         await expect(page.locator("#root > div > div.login_logo")).toHaveText("Swag Labs")
 
-        const username = page.locator("#user-name")
-        const pwd = page.locator("#password")
-        const loginbtn = page.locator("#login-button")
+        let username = page.locator("#user-name")
+        let pwd = page.locator("#password")
+        let loginbtn = page.locator("#login-button")
         await expect(username).toBeVisible()
         await expect(pwd).toBeVisible()
         await expect(loginbtn).toBeVisible()
@@ -29,7 +29,9 @@ test.describe("Swag Lab", () => {
         await page.locator("#user-name").fill("locked_out_user")
         await page.locator("#password").fill("secret_sauce")
         await page.locator("#login-button").click()
-
-        await expect(page.locator('[data-test="error"]')).toBeVisible()
+        
+        let msg = page.locator('[data-test="error"]')
+        await expect(msg).toBeVisible()
+        await expect(msg).toContainText("Sorry, this user has been locked out.")
     });
 })
