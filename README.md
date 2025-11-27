@@ -80,3 +80,8 @@ node (filename).js
 
 - Push code to GitHub and check result of example to make sure that Playwright can be used immediately
 ![alt text](image-2.png)
+
+- Run all cases
+```bash
+npx playwright test
+```
