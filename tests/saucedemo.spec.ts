@@ -34,4 +34,15 @@ test.describe("Swag Lab", () => {
         await expect(msg).toBeVisible()
         await expect(msg).toContainText("Sorry, this user has been locked out.")
     });
+
+    test("Log in with problem user", async({page}) => {
+        await page.goto('https://www.saucedemo.com/')
+        await page.locator("#user-name").fill("problem_user")
+        await page.locator("#password").fill("secret_sauce")
+        await page.locator("#login-button").click()
+        
+        let msg = page.locator('[data-test="error"]')
+        await expect(msg).toBeVisible()
+        await expect(msg).toContainText("Sorry, this user has been locked out.")
+    });
 })
